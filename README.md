@@ -2,7 +2,7 @@
 
 Add pixel-perfect HDMI output to big box Amiga machines with video slots.
 
-![](Amiga-VideoSlot-RGBtoHDMI-3DRender.png)
+![](Amiga-VideoSlot-RGBtoHDMI-3DRender2.png)
 
 This project builds on c0pperdragon's [Amiga-Digital-Video project](https://github.com/c0pperdragon/Amiga-Digital-Video), adapted for use in big box Amiga video slots.
 
