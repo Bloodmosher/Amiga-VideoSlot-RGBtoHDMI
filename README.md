@@ -22,6 +22,12 @@ https://github.com/hoglet67/RGBtoHDMI/releases.
 - Set the Denise jumper according to which Denise is in your Amiga (Super Denise for 8373, Denise for 8362)
 - Orient the PCB such that the end with bracket mounting holes faces the rear of the machine
 
+## Assembled board example
+
+Here's an example of a completed board with a custom bracket, installed in an A2000:
+
+ ![](a2000-shot-1.jpg)
+
 ## Board availability
 - You can of course build your own if you are confident with a soldering iron. You can find the schematic and other relevant files in the [RGBtoHDMI](https://github.com/hoglet67/RGBtoHDMI) project [here](https://github.com/hoglet67/RGBtoHDMI/tree/master/kicad_AmigaAdapter/VideoSlot/V1).
 - I may periodically have extras available and can ship within the U.S., cost and availability TBD. If you are interested in one, you can contact me via (bloodmosher (at) outlook (dot) com) to be added to the list.
