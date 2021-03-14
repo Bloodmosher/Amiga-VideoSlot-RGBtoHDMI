@@ -31,3 +31,24 @@ Here's an example of a completed board with a custom bracket, installed in an A2
 ## Board availability
 - You can of course build your own if you are confident with a soldering iron. You can find the schematic and other relevant files in the [RGBtoHDMI](https://github.com/hoglet67/RGBtoHDMI) project [here](https://github.com/hoglet67/RGBtoHDMI/tree/master/kicad_AmigaAdapter/VideoSlot/V1).
 - I may periodically have extras available and can ship within the U.S., cost and availability TBD. If you are interested in one, you can contact me via (bloodmosher (at) outlook (dot) com) to be added to the list.
+
+## Profile configuration tips
+- I recommend using the 1/31/21 release of the software, which can be found [here](https://github.com/hoglet67/RGBtoHDMI/releases/tag/20210131_20ce5f0).
+- There can be subtle variations in display quality depending on the board, Amiga, and monitor/TV used. You may need to experiment to get the best results.
+
+For example, the below pictures illustrate output from my Amiga 3000, first with the default configuration, and then with modifications:
+
+## Example Amiga 3000 output before configuration tuning:
+- Some subtle "moving pixels" can be seen, in dense hatch patterns of light/dark pixels in particular (circled in red)
+- This effect can be very noticeable on one of my monitors, but barely noticeable on another.
+
+![](a3k-config-before-tuning.png)
+
+## After configuration tuning with the following key changes:
+- Settings Menu->Overclock CPU: 40
+- Settings Menu->Overclock Core: 170
+- Sampling Menu->Sync Edge: Trailing with +ve PixClk
+
+I highly suggest using a heat sink on the Pi with this configuration. Keep an eye on the core temperature (Info Menu->System Summary->Core Temp). Mine runs just under 43C, which is still cooler than my A500 which sits around 47C using the Denise adapter with default settings from the same release (OverClock CPU: 0, OverClock Core: 50).
+
+![](a3k-config-after-tuning.png)
