@@ -34,7 +34,7 @@ Here's an example of a completed board with a custom bracket, installed in an A2
 
 ## Noise and 'sparkling' on the image
 - The most common source of display issues is having an incorrect Denise jumper setting. Make sure you have this set correctly! I have accidentally set this wrong many times myself.
-- In some cases the addition of a 47pf capacitor can help eliminate noise, as described [here](https://github.com/c0pperdragon/Amiga-Digital-Video/issues/41#issuecomment-793802678).
+- In some cases the addition of a 47pf capacitor between pins 9 and 11 of the Pi header connector can help eliminate noise, as described [here](https://github.com/c0pperdragon/Amiga-Digital-Video/issues/41#issuecomment-793802678).
 - I've tested many boards on A2000, A3000, with both Denise variants, on many different displays. My Predator X27 seems best at surfacing display noise (often visible even when totally invisible on another display), and I have found that the addition of the 47pf capacitor as well as configuration tuning as described below makes the display rock solid on this monitor.
 - A future revision of the board may include this capacitor and/or make use of the unused gates on U5 to provide the appropriate signal delay.
 
