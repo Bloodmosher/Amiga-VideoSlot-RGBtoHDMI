@@ -2,7 +2,7 @@
 
 Add pixel-perfect HDMI output to big box Amiga machines with video slots.
 
-![](Amiga-VideoSlot-RGBtoHDMI-3DRender2.png)
+![](Amiga-VideoSlot-RGBtoHDMI-3DRender2-v1.01.png)
 
 This project builds on c0pperdragon's [Amiga-Digital-Video project](https://github.com/c0pperdragon/Amiga-Digital-Video), adapted for use in big box Amiga video slots.
 
@@ -29,18 +29,19 @@ Here's an example of a completed board with a custom bracket, installed in an A2
  ![](a2000-shot-1.jpg)
 
 ## Board availability
-- You can of course build your own if you are confident with a soldering iron. You can find the schematic and other relevant files in the [RGBtoHDMI](https://github.com/hoglet67/RGBtoHDMI) project [here](https://github.com/hoglet67/RGBtoHDMI/tree/master/kicad_AmigaAdapter/VideoSlot/V1).
+- You can of course build your own if you are confident with a soldering iron. You can find the schematic and other relevant files in the [RGBtoHDMI](https://github.com/hoglet67/RGBtoHDMI) project [here](https://github.com/Bloodmosher/RGBtoHDMI/tree/amiga-videoslot-v1_01/kicad_AmigaAdapter/VideoSlot/V1).
+
 - I may periodically have extras available and can ship within the U.S., cost and availability TBD. If you are interested in one, you can contact me via (bloodmosher (at) outlook (dot) com) to be added to the list.
 
 ## Noise and 'sparkling' on the image
 - The most common source of display issues is having an incorrect Denise jumper setting. Make sure you have this set correctly! I have accidentally set this wrong many times myself.
-- In some cases the addition of a 47pf capacitor between pins 9 and 11 of the Pi header connector can help eliminate noise, as described [here](https://github.com/c0pperdragon/Amiga-Digital-Video/issues/41#issuecomment-793802678).
+- The 47pf capacitor has now been added to the board layout (V1.01) and is recommended for all builds. The V1.0 boards can easily be updated to include this as described [here](https://github.com/c0pperdragon/Amiga-Digital-Video/issues/41#issuecomment-793802678).
 - I've tested many boards on A2000, A3000, with both Denise variants, on many different displays. My Predator X27 seems best at surfacing display noise (often visible even when totally invisible on another display), and I have found that the addition of the 47pf capacitor as well as configuration tuning as described below makes the display rock solid on this monitor.
-- A future revision of the board may include this capacitor and/or make use of the unused gates on U5 to provide the appropriate signal delay.
 
 ## Profile configuration tips
 - I recommend using the 1/31/21 release of the software, which can be found [here](https://github.com/hoglet67/RGBtoHDMI/releases/tag/20210131_20ce5f0).
 - There can be subtle variations in display quality depending on the board, Amiga, and monitor/TV used. You may need to experiment to get the best results.
+- On the Amiga 3000 specifically, it is very important to ensure that the riser card PCB connector is clean. If you see a very wavy or unstable picture this is very likely the issue; just remove it and clean the PCB edge with isopropyl alcohol.
 
 For example, the below pictures illustrate output from my Amiga 3000, first with the default configuration, and then with modifications:
 
