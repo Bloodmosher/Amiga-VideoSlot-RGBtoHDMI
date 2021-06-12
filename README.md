@@ -27,12 +27,12 @@ https://github.com/hoglet67/RGBtoHDMI/releases.
 ## V1.1 Boards
 The updated V1.1 board should fix sparkling pixel noise on even the most demanding video patterns (see below for an example). Many thanks to LinuxJedi for demonstrating that alternate layouts have an impact on this. While it is difficult to pinpoint exactly which combination of changes is absolutely necessary, of the numerous experiments I have tried with variations on path length, eliminating through-holes, copper fills, regulator placement, etc. the predominant issue seems to be placement of U1 relative to the other chips. 
 
-The updated V1.1 schematic and gerber files are available [here](https://github.com/Bloodmosher/RGBtoHDMI/tree/amiga-videoslot-v1_1/kicad_AmigaAdapter/VideoSlot/V1).
-
-I recommend using the 5/29/21 release of the software, which can be found [here](https://github.com/hoglet67/RGBtoHDMI/releases/tag/20210529_777ea4f).
+- The updated V1.1 schematic and gerber files are available [here](https://github.com/Bloodmosher/RGBtoHDMI/tree/amiga-videoslot-v1_1/kicad_AmigaAdapter/VideoSlot/V1).
+- I recommend using the 5/29/21 release of the software, which can be found [here](https://github.com/hoglet67/RGBtoHDMI/releases/tag/20210529_777ea4f).
+- The 47pf capacitor, and excessive overclocking settings should no longer be required.
 
 ## Test Pattern
-I've found that a 640x200 image with alternating pixel colors are most helpful in verifying that pixel sparkles are eliminated.
+I've found that a 640x200 image with alternating pixel colors is most helpful in verifying that pixel sparkles are eliminated.
 
 Here's an example of a solid picture from the V1.1 board:
 
