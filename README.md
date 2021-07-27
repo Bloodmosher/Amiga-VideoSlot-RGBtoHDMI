@@ -30,7 +30,7 @@ The updated V1.1 board should fix sparkling pixel noise on even the most demandi
 
 ## Test Pattern
 - I've found that a 640x200 image with alternating pixel colors is most helpful in verifying that pixel sparkles are eliminated.
-- You can try download and run the test tool I used yourself here: https://github.com/Bloodmosher/AmigaSparkler
+- You can download and run the test tool that I have used yourself here: https://github.com/Bloodmosher/AmigaSparkler
 
 Here's an example of a solid picture from the V1.1 board:
 
