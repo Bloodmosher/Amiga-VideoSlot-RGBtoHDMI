@@ -48,6 +48,7 @@ Here's an example of a completed board with a custom bracket, installed in an A2
 
 ## Board availability
 - You can of course build your own if you are confident with a soldering iron. You can find the schematic and other relevant files [here](https://github.com/Bloodmosher/RGBtoHDMI/tree/amiga-videoslot-v1_1/kicad_AmigaAdapter/VideoSlot/V1).
+- For details on the custom bracket and other components used, see [AmigaBrackets](https://github.com/Bloodmosher/AmigaBrackets)
 
 - I may periodically have extras available and can ship within the U.S., cost and availability TBD. If you are interested in one, you can contact me via (bloodmosher (at) outlook (dot) com) to be added to the list.
 
