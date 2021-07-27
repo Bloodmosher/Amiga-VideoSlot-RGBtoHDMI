@@ -1,4 +1,4 @@
-# Amiga Video Slot RGB to HDMI
+# Amiga Video Slot RGB to HDMI V1.1
 
 Add pixel-perfect HDMI output to big box Amiga machines with video slots.
 
@@ -9,9 +9,6 @@ This project builds on c0pperdragon's [Amiga-Digital-Video project](https://gith
 The main differences are:
 - The 7MHZ signal is derived via C1 XNOR C3 since 7MHZ is not available directly from the video slot
 - Two button connectors allow for both a rear slot cover bracket button and another to be used, mounted wherever desired
-
-The card edge connector used is from [Amiga-KiCad-Library](https://github.com/JustinBaldock/Amiga-KiCad-Library). Approximately 1mm of space is left between the fingers and the PCB edge to allow for beveling.
-
 
 ## Software
 - A compatible release of the software is available from the RGBtoHDMI repository 
@@ -32,7 +29,8 @@ The updated V1.1 board should fix sparkling pixel noise on even the most demandi
 - The 47pf capacitor, and excessive overclocking settings should no longer be required.
 
 ## Test Pattern
-I've found that a 640x200 image with alternating pixel colors is most helpful in verifying that pixel sparkles are eliminated.
+- I've found that a 640x200 image with alternating pixel colors is most helpful in verifying that pixel sparkles are eliminated.
+- You can try download and run the test tool I used yourself here: https://github.com/Bloodmosher/AmigaSparkler
 
 Here's an example of a solid picture from the V1.1 board:
 
