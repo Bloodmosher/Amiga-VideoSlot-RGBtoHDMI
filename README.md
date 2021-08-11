@@ -26,7 +26,12 @@ The updated V1.1 board should fix sparkling pixel noise on even the most demandi
 
 - The updated V1.1 schematic and gerber files are available [here](https://github.com/Bloodmosher/RGBtoHDMI/tree/amiga-videoslot-v1_1/kicad_AmigaAdapter/VideoSlot/V1).
 - I recommend using the 5/29/21 release of the software, which can be found [here](https://github.com/hoglet67/RGBtoHDMI/releases/tag/20210529_777ea4f).
-- The 47pf capacitor, and excessive overclocking settings should no longer be required.
+- Some machines, in particular Amiga 3000s, seem to still require overclocking to completely eliminate noise.
+- Start with the default profile first, then run the [Sparkler](https://github.com/Bloodmosher/AmigaSparkler) test tool, and if there is noise in the image try the following settings changes:
+    - Settings Menu->Overclock CPU: 40
+    - Settings Menu->Overclock Core: 170
+    - Sampling Menu->Sync Edge: Trailing with +ve PixClk
+- Be sure to install a heat sink on your Pi as even the default configuration has some amount of overclocking.
 
 ## Test Pattern
 - I've found that a 640x200 image with alternating pixel colors is most helpful in verifying that pixel sparkles are eliminated.
